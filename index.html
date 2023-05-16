@@ -20,10 +20,14 @@
             <div class="d-flex flex-column gap-2 mt-2  ">
                 <label for="passLenght" class="text-uppercase  fw-bold">password lenght</label>
                 <input type="text" name="passLenght" id="passLenght" class="form-control form-control-lg">
+
                 <label for="password" class="text-uppercase  fw-bold">password</label>
                 <input type="password" name="password" id="password" class="form-control form-control-lg">
-                <button class="btn btn-dark text-uppercase fw-bold  btn-lg-mt-2"> generate password</button>
-                <button class="btn btn-primary text-uppercase fw-bold  btn-lg-mt-2> save password">save
+
+                <button onclick="getPass()" class="btn btn-dark text-uppercase fw-bold  btn-lg-mt-2"> generate
+                    password</button>
+                <button onclick="savePass()"
+                    class="btn btn-primary text-uppercase fw-bold  btn-lg-mt-2> save password">save
                     password</button>
             </div>
         </div>
