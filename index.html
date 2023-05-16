@@ -15,7 +15,7 @@
 
     <div class="container d-flex justify-content-center align-item-center min-vh-100">
         <div class="d-flex flex-column">
-            <h1>PASSWORD GENERATOR </h1>
+            <h1>PASSWORD GENERATOR</h1>
 
             <div class="d-flex flex-column gap-2 mt-2  ">
                 <label for="passLenght" class="text-uppercase  fw-bold">password lenght</label>
@@ -24,6 +24,8 @@
                 <label for="password" class="text-uppercase  fw-bold">password</label>
                 <input type="text" name="password" id="password" class="form-control form-control-lg">
 
+                <p class="d-flex justify-content-center ">Current Password</p>
+                <h1 id="currentPass"></h1>
                 <button onclick="getPass()" class="btn btn-dark text-uppercase fw-bold  btn-lg-mt-2"> generate
                     password</button>
                 <button onclick="savePass()"
