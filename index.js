@@ -5,8 +5,7 @@ let passwordLenght = document.getElementById("passLenght")
 
 
 function generatePass(len) {
-    // console.log(password.val)
-    // console.log(passwordLenght.textContent)
+
 
     const upperAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     const lowerAlphabet = "abcdefghijklmnopqrstuvwxyz"
