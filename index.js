@@ -14,7 +14,7 @@ function generatePass(len) {
     const data = upperAlphabet + lowerAlphabet + numberic
     let generator = '';
 
-    for (let index = 0; len < 10; index++) {
+    for (let index = 0; index < len; index++) {
         generator += data[~~(Math.random() * data.length)]
     }
 
