@@ -22,6 +22,7 @@ function generatePass(len) {
 
 function getPass() {
     let newPass = generatePass(passwordLenght.value)
+    password.value = newPass
     console.log(passwordLenght.value)
     console.log(newPass)
 }
