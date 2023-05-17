@@ -1,6 +1,9 @@
 let password = document.getElementById("password")
 let passwordLenght = document.getElementById("passLenght")
 let currentPass = document.getElementById("currentPass")
+let saveBtn = document.getElementById("saveBtn")
+
+const btnGenerate = document.getElementById("btnGenerate")
 
 function generatePass(len) {
     if (len == '') len = 8
@@ -21,10 +24,15 @@ function getPass() {
     let newPass = generatePass(passwordLenght.value)
     password.value = newPass
     currentPass.textContent = newPass
+
+
     console.log(passwordLenght.value)
     console.log(newPass)
 }
 
 function savePass() {
-
+    document.title = password.value
+    saveBtn.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(`password saya: ${document.title}`))
+    saveBtn.setAttribute("download", "my password form generator.txt")
+    setTimeout(() => { alert("berhasil disimpan") }, 500)
 }
