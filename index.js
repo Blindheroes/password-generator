@@ -33,6 +33,6 @@ function getPass() {
 function savePass() {
     document.title = password.value
     saveBtn.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(`password saya: ${document.title}`))
-    saveBtn.setAttribute("download", "my password form generator.txt")
+    saveBtn.setAttribute("download", "my password from generator.txt")
     setTimeout(() => { alert("berhasil disimpan") }, 500)
 }
